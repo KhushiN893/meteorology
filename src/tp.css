@@ -1,11 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap");
-
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.div-con {
+  background-image: linear-gradient(
+    to bottom,
+    #010e22,
+    #a5bbdd,
+    #95c0ff,
+    #4992ff,
+    #010e22
+  );
+}
 .app-name {
-  font-size: 3rem;
-  color: rgb(125, 125, 236);
-  font-weight: bold;
-  font-family: "Dosis", sans-serif;
-  text-shadow: 2px 2px 3px black;
+  font-size: 2.5rem;
 }
 
 /* app box */
@@ -17,30 +25,29 @@
   min-height: 480px;
   /* background-color: #ffffff; */
   background-color: rgba(226, 226, 226, 0.2);
-  background: url("./components/background.png");
+  background: url("./components/background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   text-align: center;
   margin: 80px auto;
   border-radius: 10px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* City Search  */
 .city-search {
-  font-family: "Dosis", sans-serif;
-  font-size: 1.2rem;
   width: 200px;
   box-sizing: border-box;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #ccc;
   outline: none;
-  border-radius: 22px;
+  border-radius: 20px;
+  font-size: 16px;
   background-color: white;
   /* background-color: rgba(226, 226, 226, 0.6); */
-  /* background-image: url(./components/img/searchicon.jpg); */
+  background-image: url(./components/img/searchicon.jpg);
   background-position: 10px 10px;
-  padding: 10px 20px 10px 40px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -51,43 +58,37 @@
 
 /* city name */
 .city-name {
-  margin-top: 38px;
-  font-family: "Dosis", sans-serif;
-  font-size: 2em;
-  font-weight: bold;
+  margin-top: -22px;
+  font-size: 1.2em;
 }
 h2 {
-  margin-bottom: 12px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 /* current date */
 .date {
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 500;
-  margin-top: -5px;
-  font-family: "Dosis", sans-serif;
 }
 
 /* weather icon and temp */
 .icon-temp {
   font-size: 4rem;
+  margin-top: 30px;
+  margin-left: 30px;
   font-weight: 700;
   color: #1e2432;
-  font-family: "Dosis", sans-serif;
-  margin-top: 40px;
+  text-shadow: 2px 2px 2px rgb(77, 160, 255);
   text-align: center;
 }
 .deg {
   font-size: 2rem;
-  font-family: "Dosis", sans-serif;
 }
 
 /* weather description and wind speed */
 .des-wind {
   font-weight: 500;
   margin-left: 17px;
-  font-family: "Dosis", sans-serif;
 }
 
 /* Error message */
@@ -99,8 +100,8 @@ h2 {
   margin-top: auto;
 }
 .result {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid red;
+  padding: 3vh;
+  margin: 2vh;
   background: url("./components/back.png");
-  background-size: cover;
-  background-position: 29px 20px;
 }
