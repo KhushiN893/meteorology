@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import axios from 'axios';
-// import Loader from 'react-loader-spinner';
 import Loader from './Loader';
 import Cityerror from './Cityerror';
 
-function Weather() {
- 
+function Weather() { 
   const [query, setQuery] = useState();
   const [weather, setWeather] = useState({
     loading: false,
@@ -15,9 +13,6 @@ function Weather() {
   });
 
   const toDate = () => {
-    // let date = new Date();
-    // const today = date.toDateString();
-    // return today;
     const months = [
       'January',
       'February',
@@ -78,13 +73,13 @@ function Weather() {
 
   return (
     <div >
-      <h1 className="app-name">
+      <h1 className="appName">
         Weather <span>🌤</span>
       </h1>
       <div className="search-bar">
         <input
           type="text"
-          className="city-search"
+          className="Scity"
           placeholder="Search City.."
           name="query"
           value={query}
@@ -95,8 +90,6 @@ function Weather() {
 
       {weather.loading && (
         <>
-          <br />
-          <br />
           <Loader />
         </>
       )}
@@ -108,21 +101,19 @@ function Weather() {
 
       {weather && weather.data && weather.data.main && (
         <div className='result'>
-          <div className="city-name">
-            
-              {weather.data.name}, <span>{weather.data.sys.country}</span>
-            
+          <div className="cityName">            
+              {weather.data.name}, <span>{weather.data.sys.country}</span>            
           </div>
           <div className="date">
             <span>{toDate()}</span>
           </div>
-          <div className="icon-temp">            
+          <div className="Dres">            
             {Math.round(weather.data.main.temp)}
             <sup className="deg">&deg;C</sup>
           </div>
           <div className="des-wind">
             <p>{weather.data.weather[0].description.toUpperCase()}</p>
-            <p>Wind Speed: {weather.data.wind.speed}m/s</p>
+            <p style={{fontWeight:"bold"}}>Wind Speed: {weather.data.wind.speed}m/s</p>
           </div>
         </div>
       )}

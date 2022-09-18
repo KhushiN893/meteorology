@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap");
 
-.app-name {
+.appName {
   font-size: 3rem;
   color: rgb(125, 125, 236);
   font-weight: bold;
@@ -15,20 +15,20 @@
   justify-content: start;
   width: 400px;
   min-height: 480px;
-  /* background-color: #ffffff; */
   background-color: rgba(226, 226, 226, 0.2);
-  background: url("./components/background.png");
+  background: url("./components/assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
   margin: 80px auto;
   border-radius: 10px;
   padding-bottom: 32px;
+  padding-top: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* City Search  */
-.city-search {
+.Scity {
   font-family: "Dosis", sans-serif;
   font-size: 1.2rem;
   width: 200px;
@@ -37,20 +37,17 @@
   outline: none;
   border-radius: 22px;
   background-color: white;
-  /* background-color: rgba(226, 226, 226, 0.6); */
-  /* background-image: url(./components/img/searchicon.jpg); */
   background-position: 10px 10px;
   padding: 10px 20px 10px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
-.city-search:focus {
+.Scity:focus {
   width: 60%;
-  /* background-color: white; */
 }
 
 /* city name */
-.city-name {
+.cityName {
   margin-top: 38px;
   font-family: "Dosis", sans-serif;
   font-size: 2em;
@@ -70,7 +67,7 @@ h2 {
 }
 
 /* weather icon and temp */
-.icon-temp {
+.Dres {
   font-size: 4rem;
   font-weight: 700;
   color: #1e2432;
@@ -90,17 +87,9 @@ h2 {
   font-family: "Dosis", sans-serif;
 }
 
-/* Error message */
-.error-message {
-  display: block;
-  text-align: center;
-  color: rgb(20, 2, 2);
-  font-size: 30px;
-  margin-top: auto;
-}
 .result {
   border: 1px solid rgb(255, 255, 255);
-  background: url("./components/back.png");
+  background: url("./components/assets/back.png");
   background-size: cover;
   background-position: 29px 20px;
 }
